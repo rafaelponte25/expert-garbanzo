@@ -1,0 +1,31 @@
+# Dockerfile References: https://docs.docker.com/engine/reference/builder/
+# Start from golang base image
+FROM artifactory.enova.com/docker-remote/alpine:3.14 as builder
+RUN apk --update add \
+    go \
+  musl-dev \
+  git
+# Take in the Git commit sha to pass as AppRevision
+ARG GIT_REVISION=latest
+# Add Maintainer Info
+LABEL maintainer="CCT_SE <cct_se@enova.com>"
+# Set the Current Working Directory inside the container
+WORKDIR /gccm
+# Copy everything from the current directory to the PWD(Present Working Directory) inside the container
+COPY . .
+# Download dependencies
+RUN go get -d -v -t ./...
+# Build the Go app
+#RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -tags musl -ldflags="-X main.AppRevision=$GIT_REVISION -w -s" -a 
+#Add back to ldflags to produce a static binary: -linkmode external -extldflags '-static'
+ENV LIVE_TEST=1
+ENV KAFKA_HOST=pkc-ep9mm.us-east-2.aws.confluent.cloud:9092
+ENV KAFKA_KEY=T3EWVMHKPBIDX5PX
+ENV KAFKA_SECRET=ySBCdr4Nm+o5O/zEoG5U3wYnsRSCbILM1f7B9m2PoNDZghKNUiJZD/ZNlgsHjHO/
+ENV KAFKA_CONVERSATIONS_TOPIC=gccm-conversations-staging
+ENV ENVIRONMENT=staging
+ENV GENESYS_CLOUD_DOMAIN=usw2.pure.cloud
+ENV GENESYS_CLOUD_CLIENT_ID=b8a397bc-4bbf-42eb-91cd-d1bbbf97bc4a
+ENV GENESYS_CLOUD_SECRET=PMQV-nu02k7_uU6lTjdY_M2nZTqHGGMPsJY3JSdHRJ8
+ENV CONVERSATION_DATA_DIVISION_ID=41f59f5e-78cb-498e-8caa-a257f77615fb
+CMD ["go", "test", "-v", "-tags", "musl"]
