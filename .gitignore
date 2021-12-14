@@ -1,3 +1,6 @@
 Terraform/.terraform
 Terraform/.terraform.lock.hcl
+Terraform/.terraform
+Terraform/simpleCloudStorageS3/.terraform.lock.hcl
+Terraform/simpleCloudStorageS3/.terraform
 .DS_Store
