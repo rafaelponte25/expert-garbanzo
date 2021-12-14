@@ -3,4 +3,5 @@ Terraform/.terraform.lock.hcl
 Terraform/.terraform
 Terraform/simpleCloudStorageS3/.terraform.lock.hcl
 Terraform/simpleCloudStorageS3/.terraform
+Terraform/simpleCloudStorageS3/terraform.tfstate
 .DS_Store
