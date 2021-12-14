@@ -10,6 +10,10 @@ data "aws_caller_identity" "my_account" {}
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-s3-bucket-${data.aws_caller_identity.my_account.account_id}"
 
+  versioning {
+    enabled = true
+  }
+
   tags = {
     Type = "LOG"
     Tier = "Standard"
@@ -22,4 +26,5 @@ resource "aws_s3_bucket_object" "readme_file" {
   key    = "files/readme.txt"
 
   source = "readme.txt"
+  etag   = filemd5("readme.txt")
 }
