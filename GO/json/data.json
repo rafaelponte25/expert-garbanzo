@@ -1,0 +1,112 @@
+[
+    {
+      "id": "89f1cfa5-c8a5-48c8-af9f-3e39a20f979c",
+      "contactListId": "c31c9076-caae-4368-a90d-10e5e88730fc",
+      "data": {
+        "LoanId": "1234567",
+        "PhoneNumber": "555-201-1234",
+        "AccountId": "54321",
+        "CustomerName": "Antonio Banderas",
+        "CampaignName": "test_campaign",
+        "CRMCustomerLink": "https://test.dev?account_id=1234567"
+      },
+      "callable": true,
+      "phoneNumberStatus": {
+        "PhoneNumber": {
+          "callable": true
+        }
+      },
+      "configurationOverrides": {
+        "priority": false
+      },
+      "selfUri": "/api/v2/outbound/contactlists/c31c9076-caae-4368-a90d-10e5e88730fc/contacts/89f1cfa5-c8a5-48c8-af9f-3e39a20f979c"
+    },
+    {
+      "id": "a490c859-34c1-4d3d-8d1e-5f0def0e88f8",
+      "contactListId": "c31c9076-caae-4368-a90d-10e5e88730fc",
+      "data": {
+        "LoanId": "1234568",
+        "PhoneNumber": "555-202-1234",
+        "AccountId": "54322",
+        "CustomerName": "Milhouse Van Houten",
+        "CampaignName": "test_campaign",
+        "CRMCustomerLink": "https://test.dev?account_id=1234568"
+      },
+      "callable": true,
+      "phoneNumberStatus": {
+        "PhoneNumber": {
+          "callable": true
+        }
+      },
+      "configurationOverrides": {
+        "priority": false
+      },
+      "selfUri": "/api/v2/outbound/contactlists/c31c9076-caae-4368-a90d-10e5e88730fc/contacts/a490c859-34c1-4d3d-8d1e-5f0def0e88f8"
+    },
+    {
+      "id": "7343b11f-ec51-4423-b483-f62c8bc5026b",
+      "contactListId": "c31c9076-caae-4368-a90d-10e5e88730fc",
+      "data": {
+        "LoanId": "1234569",
+        "PhoneNumber": "555-203-1234",
+        "AccountId": "54323",
+        "CustomerName": "Hank Hill",
+        "CampaignName": "test_campaign",
+        "CRMCustomerLink": "https://test.dev?account_id=1234569"
+      },
+      "callable": true,
+      "phoneNumberStatus": {
+        "PhoneNumber": {
+          "callable": true
+        }
+      },
+      "configurationOverrides": {
+        "priority": false
+      },
+      "selfUri": "/api/v2/outbound/contactlists/c31c9076-caae-4368-a90d-10e5e88730fc/contacts/7343b11f-ec51-4423-b483-f62c8bc5026b"
+    },
+    {
+      "id": "fb9200ac-0d54-4c6f-85aa-881cd8e3eee8",
+      "contactListId": "c31c9076-caae-4368-a90d-10e5e88730fc",
+      "data": {
+        "LoanId": "1234570",
+        "PhoneNumber": "555-204-1234",
+        "AccountId": "54324",
+        "CustomerName": "Eddie Murphy",
+        "CampaignName": "test_campaign",
+        "CRMCustomerLink": "https://test.dev?account_id=1234570"
+      },
+      "callable": true,
+      "phoneNumberStatus": {
+        "PhoneNumber": {
+          "callable": true
+        }
+      },
+      "configurationOverrides": {
+        "priority": false
+      },
+      "selfUri": "/api/v2/outbound/contactlists/c31c9076-caae-4368-a90d-10e5e88730fc/contacts/fb9200ac-0d54-4c6f-85aa-881cd8e3eee8"
+    },
+    {
+      "id": "e2348cfa-040d-49ab-a12d-759c5f131deb",
+      "contactListId": "c31c9076-caae-4368-a90d-10e5e88730fc",
+      "data": {
+        "LoanId": "1234571",
+        "PhoneNumber": "555-205-1234",
+        "AccountId": "54325",
+        "CustomerName": "Danny Trejo",
+        "CampaignName": "test_campaign",
+        "CRMCustomerLink": "https://test.dev?account_id=1234571"
+      },
+      "callable": true,
+      "phoneNumberStatus": {
+        "PhoneNumber": {
+          "callable": true
+        }
+      },
+      "configurationOverrides": {
+        "priority": false
+      },
+      "selfUri": "/api/v2/outbound/contactlists/c31c9076-caae-4368-a90d-10e5e88730fc/contacts/e2348cfa-040d-49ab-a12d-759c5f131deb"
+    }
+  ]
