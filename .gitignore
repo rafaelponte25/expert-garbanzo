@@ -6,3 +6,15 @@ Terraform/simpleCloudStorageS3/.terraform.lock.hcl
 Terraform/simpleCloudStorageS3/.terraform
 Terraform/simpleCloudStorageS3/terraform.tfstate
 Terraform/simpleCloudStorageS3/terraform.tfstate.backup
+Terraform/website_with_s3/.terraform.lock.hcl
+Terraform/website_with_s3/.terraform
+Terraform/website_with_s3/terraform.tfstate
+Terraform/website_with_s3/terraform.tfstate.backup
+Terraform/dynamoDB/.terraform.lock.hcl
+Terraform/dynamoDB/.terraform
+Terraform/dynamoDB/terraform.tfstate
+Terraform/dynamoDB/terraform.tfstate.backup
+Terraform/lambda_with_sqs/.terraform.lock.hcl
+Terraform/lambda_with_sqs/.terraform
+Terraform/lambda_with_sqs/terraform.tfstate
+Terraform/lambda_with_sqs/terraform.tfstate.backup
